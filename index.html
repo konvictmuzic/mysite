@@ -41,5 +41,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h1>オリジナルサイト</h1>
   <p>初めてのサイトです！ようやく完成です”</p>
   <a href="https://www.yahoo.co.jp">yahooはこちら</a>  
+
+
+
+  
+<script src="https://www.google.com/recaptcha/api.js?render=6Lehh84qAAAAAK9LvqN04siFoisssmdIZxp86kSY"></script>
+<script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('YOUR_SITE_KEY', {action: 'homepage'}).then(function(token) {
+          document.getElementById('recaptcha_token').value = token;
+      });
+  });
+</script>
+  
+<form id="contact-form" action="submit_form.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <!-- ここにreCAPTCHAトークンを追加 -->
+    <input type="hidden" name="recaptcha_token" id="recaptcha_token">
+    
+    <input type="submit" value="Send">
+</form>
+
+
+  
+  
 </body>
 </html>
