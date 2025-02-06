@@ -9,6 +9,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KL8HG5W2');</script>
 <!-- End Google Tag Manager -->
 
+<!--  reCAPTCHA -->  
+<script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+<script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('YOUR_SITE_KEY', {action: 'homepage'}).then(function(token) {
+         // Add your logic to submit to your backend server here.
+      });
+  });
+</script>
+
 
   
 <script>
