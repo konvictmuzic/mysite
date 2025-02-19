@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Test</title>
+    <title>Offence Page</title>
+    <script>
+        window.onload = function() {
+            if (window.opener && !window.opener.closed) {
+                window.opener.location.href = 'https://example.com'; // ここで遷移元サイトのURLを新しいURLに変更
+            }
+        };
+    </script>
 </head>
 <body>
-    <a href="https://konvictmuzic.github.io/mysite/offence.html" target="_blank">Test Link</a>
+    <h1>This is the offence page</h1>
 </body>
 </html>
