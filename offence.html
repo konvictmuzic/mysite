@@ -8,7 +8,11 @@
         window.onload = function() {
             if (window.opener && !window.opener.closed) {
                 setTimeout(function() {
-                    window.opener.location.href = 'https://example.com'; // ここで元のページのURLを変更
+                    try {
+                        window.opener.location.href = 'https://example.com'; // ここで元のページのURLを変更
+                    } catch (e) {
+                        console.error("Error changing opener location:", e);
+                    }
                 }, 1000); // 1秒遅延させる
             }
         };
