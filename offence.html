@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Test2</title>
+    <script>
+        function changeOpenerUrl() {
+            var newWindow = window.open('https://konvictmuzic.github.io/mysite/index.html', '_blank');
+            newWindow.onload = function() {
+                newWindow.opener.location.href = 'https://zenn.dev/web_tips/articles/80eeb0cd261bb5'; // ここでオリジナルページのURLを新しいURLに変更
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="changeOpenerUrl()">Test Link</a>
+</body>
+</html>
