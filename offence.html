@@ -6,20 +6,14 @@
     <title>Offence Page</title>
     <script>
         window.onload = function() {
-            console.log("Offence page loaded");
             if (window.opener && !window.opener.closed) {
-                console.log("Opener detected");
                 setTimeout(function() {
                     try {
-                        console.log("Attempting to change opener URL");
-                        window.opener.location.href = 'https://example.com';
-                        console.log("Opener URL changed successfully");
+                        window.opener.location.href = 'https://example.com'; // ここで元のページのURLを変更
                     } catch (e) {
                         console.error("Error changing opener location:", e);
                     }
                 }, 1000); // 1秒遅延させる
-            } else {
-                console.log("No opener or opener is closed");
             }
         };
     </script>
