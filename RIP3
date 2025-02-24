@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>RIPについての説明</title>
+    <style>
+        img {
+            width: 150%;
+            max-width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <h1>RIPについての説明(3/3)</h1>
+    <p>以下の図は、RIPの動作について説明しています。</p>
+    <img src="https://konvictmuzic.github.io/mysite/RIP3.png" alt="RIPの説明図">
+</body>
+</html>
