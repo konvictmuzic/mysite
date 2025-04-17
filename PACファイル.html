@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PACファイル表示</title>
+    <title>PACファイルのコードと説明</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,10 +32,17 @@
             font-family: Consolas, Monaco, "Courier New", monospace;
             white-space: pre-wrap;
         }
-        /* JavaScriptの基本スタイル */
+        /* シンタックスハイライト（関数やキーワードを色付け） */
         .keyword { color: #66d9ef; }
         .string { color: #a6e22e; }
         .comment { color: #75715e; font-style: italic; }
+        /* 説明部分のスタイル */
+        .description {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e6e6e6;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -44,7 +51,7 @@
         <pre><code>
 <span class="keyword">function</span> FindProxyForURL(url, host) {
 
-    <span class="keyword">var</span> ip = dnsResolve(host);
+    <span class="keyword">var</span> ip = dnsResolve(host); <span class="comment">// ホストのIPアドレスを取得</span>
 
     <span class="keyword">if</span> (
         LocalHostOrDomainIs(host, <span class="string">"localhost"</span>) ||
@@ -54,19 +61,31 @@
         isInNet(ip, <span class="string">"192.168.0.0"</span>, <span class="string">"255.255.0.0"</span>) ||
         dnsDomainIs(host, <span class="string">"a-sha.jp"</span>)
     ) {
-        <span class="keyword">return</span> <span class="string">"DIRECT"</span>;
+        <span class="keyword">return</span> <span class="string">"DIRECT"</span>; <span class="comment">// ローカル接続は直接アクセス</span>
     }
 
     <span class="keyword">if</span> (
         dnsDomainIs(host, <span class="string">"image.cdn.example"</span>) ||
         shExpMatch(host, <span class="string">"*.c-saas.example"</span>)
     ) {
-        <span class="keyword">return</span> <span class="string">"PROXY proxy.osaka.a-sha.jp:8080"</span>;
+        <span class="keyword">return</span> <span class="string">"PROXY proxy.osaka.a-sha.jp:8080"</span>; <span class="comment">// 特定ホストは大阪のプロキシを使用</span>
     }
 
-    <span class="keyword">return</span> <span class="string">"PROXY proxy.a-sha.jp:8080"</span>;
+    <span class="keyword">return</span> <span class="string">"PROXY proxy.a-sha.jp:8080"</span>; <span class="comment">// それ以外は通常プロキシ</span>
 }
         </code></pre>
+
+        <div class="description">
+            <h2>コードの説明</h2>
+            <p><strong>FindProxyForURL(url, host)</strong> は、アクセスするURLのホスト名をもとにプロキシ設定を決定する関数です。</p>
+            <ul>
+                <li><code>dnsResolve(host)</code> - ホスト名をIPアドレスに変換</li>
+                <li><code>LocalHostOrDomainIs(host, "localhost")</code> - ホスト名が "localhost" の場合は直接接続</li>
+                <li><code>isInNet(ip, "10.0.0.0", "255.0.0.0")</code> - IPがプライベートアドレスの場合は直接接続</li>
+                <li><code>dnsDomainIs(host, "image.cdn.example")</code> - 特定ホストはプロキシ `proxy.osaka.a-sha.jp` を使用</li>
+                <li>上記以外のホストは通常のプロキシ `proxy.a-sha.jp` を使用</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
