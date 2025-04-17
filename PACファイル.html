@@ -1,67 +1,19 @@
-<!DOCTYPE html>
-<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PACファイル表示</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        pre {
-            background: #272822;
-            color: #f8f8f2;
-            padding: 10px;
-            overflow-x: auto;
-            border-radius: 5px;
-        }
-        code {
-            font-family: Consolas, Monaco, "Courier New", monospace;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>PACファイルのコード</h1>
-        <pre><code>
+    <pre><code class="language-javascript">
 function FindProxyForURL(url, host) {
-
     var ip = dnsResolve(host);
-
     if (
         LocalHostOrDomainIs(host, "localhost") ||
-        isInNet(ip, "10.0.0.0", "255.0.0.0") ||
-        isInNet(ip, "127.0.0.0", "255.0.0.0") ||
-        isInNet(ip, "172.16.0.0", "255.240.0.0") ||
-        isInNet(ip, "192.168.0.0", "255.255.0.0") ||
-        dnsDomainIs(host, "a-sha.jp")
+        isInNet(ip, "10.0.0.0", "255.0.0.0")
     ) {
         return "DIRECT";
     }
-
-    if (
-        dnsDomainIs(host, "image.cdn.example") ||
-        shExpMatch(host, "*.c-saas.example")
-    ) {
-        return "PROXY proxy.osaka.a-sha.jp:8080";
-    }
-
     return "PROXY proxy.a-sha.jp:8080";
 }
-        </code></pre>
-    </div>
+    </code></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
-</html>
