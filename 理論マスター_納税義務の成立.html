@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理論マスター_納税義務の成立</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>理論マスター_納税義務の成立</h1>
+    <p><strong>趣旨：</strong>趣旨</p>
+    <p>解答：</p>
+    <div id="answerSection">
+        <p class="answer">  酒税を最終的に負担する者は、その酒類を飲用する消費者である。したがって、</p>
+        <p class="answer">その課税方法は、消費税本来の建前からいえば、できるだけ最終消費に近い時点</p>
+        <p class="answer">をとらえることが望ましい。しかし、徴税技術の点から、酒税法では、酒類の生</p>
+        <p class="answer">産、販売、消費の各段階の中で関係者の最も少ないものとして、国産酒類につい</p>
+        <p class="answer">ては酒類の製造者を、輸入酒類については酒類引取者を酒税の納税義務者とし、</p>
+        <p class="answer">それぞれ、酒類を製造場から移出した時又は保税地域から引き取った時をとらえ</p>
+        <p class="answer">て納税義務を発生させることにしている。</p>
+        <p class="answer">  また、酒税法ではこのほかに、酒税の確保を図る必要から、例外的な措置とし</p>
+        <p class="answer">て、製造場からの移出又は保税地域からの引取のそのものではない場合であって</p>
+        <p class="answer">も、移出又は引取とみなして納税義務を発生させることにしている。</p>
+        <p class="answer">  なお、酒税法の規定に違反した場合には、製造場からの移出に該当せず、移出</p>
+        <p class="answer">とみなす規定もないが、納税義務の成立の原則に対する例外として、納税義務が</p>
+        <p class="answer">発生するものとして、直ちにその酒税が徴収され、罰則に処せられることになる。</p>
+    </div>
+    <button onclick="showAnswers()">解答表示</button>
+
+    <script>
+        function showAnswers() {
+            const answers = document.querySelectorAll('.answer');
+            answers.forEach(answer => {
+                answer.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+</html>
