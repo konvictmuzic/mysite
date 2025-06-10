@@ -13,7 +13,8 @@
         .answer {
             display: none;
             margin-top: 10px;
-            white-space: pre-wrap; /* 改行を維持 */
+            white-space: nowrap; /* テキストの途中改行を防ぐ */
+            overflow-x: auto;    /* 横スクロールを有効にする */
         }
         #answerSection {
             border: 2px solid #333;
@@ -21,11 +22,15 @@
             margin-top: 15px;
             border-radius: 5px;
             background-color: #f9f9f9;
+            overflow-x: auto; /* 回答全体をスクロール可能に */
         }
     </style>
 </head>
 <body>
     <h1>【理論マスター】1-1_納税義務の成立</h1>
+
+    <a href="https://konvictmuzic.github.io/mysite/index.html" >トップページへ </a><br><br>
+    
     <p><strong>問題：</strong>趣旨</p>
     <p>解答：</p>
     <div id="answerSection">
