@@ -13,8 +13,9 @@
         .answer {
             display: none;
             margin-top: 10px;
-            white-space: nowrap; /* テキストの途中改行を防ぐ */
-            overflow-x: auto;    /* 横スクロールを有効にする */
+            word-wrap: break-word; /* 長い単語や文字列を折り返し */
+            overflow-wrap: break-word; /* 内容が枠内に収まる */
+            font-size: 1rem; /* デフォルトの文字サイズ */
         }
         #answerSection {
             border: 2px solid #333;
@@ -22,15 +23,21 @@
             margin-top: 15px;
             border-radius: 5px;
             background-color: #f9f9f9;
-            overflow-x: auto; /* 回答全体をスクロール可能に */
+            max-width: 100%; /* 枠が画面幅を超えないよう制限 */
+            box-sizing: border-box; /* 内側の余白も含む幅調整 */
+        }
+        @media (max-width: 600px) {
+            .answer {
+                font-size: 0.8rem; /* 小さな画面で文字サイズを縮小 */
+            }
+            #answerSection {
+                font-size: 0.8rem; /* デバイス幅に応じた調整 */
+            }
         }
     </style>
 </head>
 <body>
     <h1>【理論マスター】1-1_納税義務の成立</h1>
-
-    <a href="https://konvictmuzic.github.io/mysite/index.html" >トップページへ </a><br><br>
-    
     <p><strong>問題：</strong>趣旨</p>
     <p>解答：</p>
     <div id="answerSection">
