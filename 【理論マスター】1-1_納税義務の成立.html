@@ -15,11 +15,11 @@
             margin-top: 10px;
         }
         #answerSection {
-            border: 2px solid #333; /* 枠線の色 */
-            padding: 10px;          /* 内側の余白 */
-            margin-top: 15px;      /* 上部の余白 */
-            border-radius: 5px;    /* 角を丸くする */
-            background-color: #f9f9f9; /* 背景色を淡いグレーに */
+            border: 2px solid #333;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
     </style>
 </head>
@@ -38,4 +38,24 @@
         <p class="answer">また、酒税法ではこのほかに、酒税の確保を図る必要から、例外的な措置とし</p>
         <p class="answer">て、製造場からの移出又は保税地域からの引取のそのものではない場合であって</p>
         <p class="answer">も、移出又は引取とみなして納税義務を発生させることにしている。</p>
-        <p class="answer">
+        <p class="answer">なお、酒税法の規定に違反した場合には、製造場からの移出に該当せず、移出</p>
+        <p class="answer">とみなす規定もないが、納税義務の成立の原則に対する例外として、納税義務が</p>
+        <p class="answer">発生するものとして、直ちにその酒税が徴収され、罰則に処せられることになる。</p>
+    </div>
+    <button onclick="toggleAnswers()">解答表示/非表示</button>
+
+    <script>
+        function toggleAnswers() {
+            const answers = document.querySelectorAll('.answer');
+            answers.forEach(answer => {
+                // 表示・非表示を切り替える
+                if (answer.style.display === 'none' || answer.style.display === '') {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
