@@ -3,14 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF表示</title>
+    <title>【理論マスター】1-1_納税義務の成立</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .questionCard {
+            border-bottom: 1px solid #ccc; /* 問題間の区切り線 */
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .answerSection {
+            border: 1px solid #333; /* 解答部分の枠線 */
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9; /* 解答枠の背景色を薄いグレーに */
+        }
+
+        /* PDFの縦横比を固定 */
+        .pdf-container {
+            width: 100%;
+            aspect-ratio: 1.41; /* A4サイズの縦横比 */
+            position: relative;
+        }
+
+        .pdf-container object {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>PDFを直貼り表示</h1>
+    <h1>【理論マスター】1-1_納税義務の成立</h1>
 
-    <!-- PDFの直貼り表示 -->
-    <object data="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf" type="application/pdf" width="100%" height="800px">
-        このブラウザではPDFを表示できません。PDFファイルは<a href="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf">こちら</a>からダウンロードしてください。
-    </object>
+    <div class="questionCard">
+        <a href="https://konvictmuzic.github.io/mysite/index.html">トップページへ</a><br><br>
+    </div>
+
+    <!-- 1問目 -->
+    <div class="questionCard">
+        <p><strong>問題：</strong>趣旨（重要度：C)</p>
+        <p>解答：</p>
+        <div class="answerSection" id="question1">
+            <div class="pdf-container">
+                <object data="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf" type="application/pdf">
+                    このブラウザではPDFを表示できません。PDFファイルは<a href="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf">こちら</a>からダウンロードしてください。
+                </object>
+            </div>
+        </div>
+        <button onclick="toggleAnswers('question1')">表示/非表示</button><br><br>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleAnswers(questionId) {
+            const section = document.getElementById(questionId);
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
