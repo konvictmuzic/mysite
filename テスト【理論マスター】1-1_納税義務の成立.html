@@ -12,7 +12,7 @@
         }
 
         .questionCard {
-            border-bottom: 1px solid #ccc; /* 問題間の区切り線 */
+            border-bottom: 1px solid #ccc;
             padding: 10px 0;
             margin-bottom: 20px;
         }
@@ -24,10 +24,10 @@
 
         iframe {
             width: 100%;
-            height: calc(100vh - 20px); /* 画面の高さに最適化 */
+            height: 100vh; /* デバイスの高さに合わせる */
             border: none;
-            zoom: 0.75; /* スケーリングで見切れを回避 */
-            transform-origin: top left; /* 拡大・縮小の基準点を左上に固定 */
+            transform: scale(0.9); /* コンテンツを縮小表示 */
+            transform-origin: top left; /* 拡大・縮小基準を左上に設定 */
         }
     </style>
 </head>
