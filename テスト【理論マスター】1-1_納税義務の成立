@@ -49,7 +49,7 @@
     <p>解答：</p>
     <div class="answerSection" id="question1">
 <div class="answerSection">
-    <iframe src="path/to/your/pdf-file.pdf" width="100%" height="500px"></iframe>
+    <iframe src=""https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf" width="100%" height="500px"></iframe>
 </div>
     </div>
     <button onclick="toggleAnswers('question1')">表示/非表示</button><br><br>
