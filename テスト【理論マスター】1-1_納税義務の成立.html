@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【理論マスター】1-1_納税義務の成立</title>
+    <title>PDFの表示問題改善</title>
     <style>
-        /* 必要なスタイルのみ定義 */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             line-height: 1.6;
         }
+
         .questionCard {
             border-bottom: 1px solid #ccc; /* 問題間の区切り線 */
             padding: 10px 0;
             margin-bottom: 20px;
         }
+
         .answerSection {
-            border: 1px solid #333; /* 解答部分の枠線 */
-            padding: 10px;
+            display: none; /* 初期状態は非表示 */
             margin-top: 10px;
         }
+
+        /* iframeのレスポンシブ対応 */
         iframe {
-            border: none; /* 埋め込まれたPDFの余計な枠線を消す */
+            width: 100%;
+            height: calc(100vw * 1.41); /* A4縦横比を維持 */
+            max-height: 80vh; /* 画面縦方向の80%を最大高さに */
+            border: none;
         }
     </style>
 </head>
 <body>
-    <h1>【理論マスター】1-1_納税義務の成立</h1>
-
-    <div class="questionCard">
-        <a href="https://konvictmuzic.github.io/mysite/index.html">トップページへ</a><br><br>
-    </div>
+    <h1>問題と解答</h1>
 
     <!-- 1問目 -->
     <div class="questionCard">
         <p><strong>問題：</strong>趣旨（重要度：C)</p>
         <p>解答：</p>
         <div class="answerSection" id="question1">
-            <iframe src="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf" width="100%" height="500px"></iframe>
+            <iframe src="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf"></iframe>
         </div>
         <button onclick="toggleAnswers('question1')">表示/非表示</button><br><br>
     </div>
@@ -51,10 +52,9 @@
             <p>⑴ 酒類の製造者は、その製造場から移出した酒類につき、酒税を納める義務がある。</p>
             <p>⑵ 酒類を保税地域から引き取る者は、その引き取る酒類につき、酒税を納める義務がある。</p>
         </div>
-        <button onclick="toggleAnswers('question2')">表示/非表示</button><br><br>
+        <button onclick="toggleAnswers('question2')">表示/非表示</button>
     </div>
 
-    <!-- JavaScript -->
     <script>
         function toggleAnswers(questionId) {
             const section = document.getElementById(questionId);
