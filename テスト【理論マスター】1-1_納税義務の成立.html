@@ -3,74 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>問題と解答の表示</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-
-        .questionCard {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-            margin-bottom: 20px;
-        }
-
-        .answerSection {
-            display: none;
-            margin-top: 10px;
-        }
-
-        .pdf-container {
-            width: 100%;
-            aspect-ratio: 1.41; /* A4縦横比 */
-            max-height: 80vh;
-            overflow: hidden;
-        }
-
-        embed {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <title>PDF表示</title>
 </head>
 <body>
-    <h1>問題と解答</h1>
+    <h1>PDFを直貼り表示</h1>
 
-    <!-- 1問目 -->
-    <div class="questionCard">
-        <p><strong>問題：</strong>趣旨（重要度：C)</p>
-        <p>解答：</p>
-        <div class="answerSection" id="question1">
-            <div class="pdf-container">
-                <embed src="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf" type="application/pdf">
-            </div>
-        </div>
-        <button onclick="toggleAnswers('question1')">表示/非表示</button>
-    </div>
-
-    <!-- 2問目 -->
-    <div class="questionCard">
-        <p><strong>問題：</strong>1. 納税義務者の原則（重要度：AA)</p>
-        <p>解答：</p>
-        <div class="answerSection" id="question2">
-            <p>⑴ 酒類の製造者は、その製造場から移出した酒類につき、酒税を納める義務がある。</p>
-            <p>⑵ 酒類を保税地域から引き取る者は、その引き取る酒類につき、酒税を納める義務がある。</p>
-        </div>
-        <button onclick="toggleAnswers('question2')">表示/非表示</button>
-    </div>
-
-    <script>
-        function toggleAnswers(questionId) {
-            const section = document.getElementById(questionId);
-            if (section.style.display === 'none' || section.style.display === '') {
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
-            }
-        }
-    </script>
+    <!-- PDFの直貼り表示 -->
+    <object data="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf" type="application/pdf" width="100%" height="800px">
+        このブラウザではPDFを表示できません。PDFファイルは<a href="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf">こちら</a>からダウンロードしてください。
+    </object>
 </body>
 </html>
