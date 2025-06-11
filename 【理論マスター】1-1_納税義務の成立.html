@@ -26,6 +26,13 @@
         font-size: 1.2em; /* 問題のフォントを大きく */
         margin-bottom: 10px; /* 問題と解答の間に余白を追加 */
         }
+
+        .questionCard {
+        border-bottom: 2px solid #ccc; /* 各カード間の区切り線 */
+        padding-bottom: 20px;         /* 下の余白を追加 */
+        margin-bottom: 20px;          /* 次のカードとの間隔を調整 */
+        }
+
         
     </style>
 </head>
@@ -35,6 +42,7 @@
     <a href="https://konvictmuzic.github.io/mysite/index.html" >トップページへ </a><br>
 
     <!--１問目-->
+  <div class="questionCard">
     <p><strong>問題：</strong>趣旨（重要度：C)</p>
     <p>解答：</p>
     <div class="answerSection" id="question1">
@@ -43,7 +51,7 @@
         <p class="answer">なお、酒税法の規定に違反した場合には、製造場からの移出に該当せず、移出とみなす規定もないが、納税義務の成立の原則に対する例外として、納税義務が発生するものとして、直ちにその酒税が徴収され、罰則に処せられることになる。</p>
     </div>
     <button onclick="toggleAnswers('question1')">表示/非表示</button><br><br>
-
+  </div>
     <script>
     function toggleAnswers(questionId) {
         const section = document.getElementById(questionId);
@@ -60,6 +68,7 @@
 
 
     <!--２問目--> 
+  <div class="questionCard">
     <p><strong>問題：</strong>１．納税義務者の原則（重要度：AA)</p>
     <p>解答：</p>
     <div class="answerSection" id="question2">
@@ -67,7 +76,7 @@
         <p class="answer">⑵ 酒類を保税地域から引き取る者は、その引き取る酒類につき、酒税を納める義務がある。</p>
     </div>
     <button onclick="toggleAnswers('question2')">表示/非表示</button><br><br>
-
+  </div>
      <script>
     function toggleAnswers(questionId) {
         const section = document.getElementById(questionId);
@@ -84,6 +93,7 @@
 
 
     <!--３問目--> 
+  <div class="questionCard">
     <p><strong>問題：</strong>2. 移出又は引取り等とみなす場合 [納税義務の成立の特例]（重要度：AA)</p>
     <p>解答：</p>
     <div class="answerSection" id="question3">
@@ -98,11 +108,9 @@
         <p class="answer">⑶酒類等が保税地域において飲用される場合には、その飲用者が飲用の時にその酒類等をその保税地域から引き取るものとみなす。</p>
         <p class="answer">⑷酒類等が酒類等の製造者の製造場から移出された場合において、その移出につき、その製造者の責めに帰することができないときは、その酒類等を移出した者を酒類等の製造者とみなす。</p>
         <p class="answer">⑸酒母又はもろみについて⑴から⑷までの規定の適用があった場合においては、その酒母又はもろみは、その他の醸造酒とみなし、酒母又はもろみの製造者(酒母又はもろみの製造者とみなされた者を含む。)は、その他の醸造酒の製造者とみなす。</p>
-
-        
     </div>
     <button onclick="toggleAnswers('question3')">表示/非表示</button><br><br>
-
+</div>
     <script>
     function toggleAnswers(questionId) {
         const section = document.getElementById(questionId);
@@ -120,6 +128,7 @@
 
 
     <!--４問目--> 
+  <div class="questionCard">
     <p><strong>問題：</strong>3. 収去酒類の非課税（重要度：C)</p>
     <p>解答：</p>
     <div class="answerSection" id="question4">
@@ -129,7 +138,7 @@
         <p class="answer">⑶ 食品表示法の規定により収去される酒類</p>
     </div>
     <button onclick="toggleAnswers('question4')">表示/非表示</button><br><br>
-
+</div>
     <script>
     function toggleAnswers(questionId) {
         const section = document.getElementById(questionId);
@@ -144,9 +153,8 @@
     }
     </script>
   
-
-
     <!--５問目--> 
+  <div class="questionCard">
     <p><strong>問題：</strong>4. 酒税法の規定に違反した場合の納税義務の成立及び罰則（重要度：???)</p>
     <p>解答：</p>
     <div class="answerSection" id="question5">
@@ -161,7 +169,7 @@
         <p class="answer">⑹酒母又はもろみの製造者が不可飲処置の命令に違反して酒母又はもろみを処分し、又は製造場から移出した場合。(1年以下の懲役又は50万円以下の罰金)</p>
     </div>
     <button onclick="toggleAnswers('question5')">表示/非表示</button><br><br>
-
+ </div>
     <script>
     function toggleAnswers(questionId) {
         const section = document.getElementById(questionId);
@@ -178,6 +186,7 @@
 
 
     <!--６問目--> 
+  <div class="questionCard">
     <p><strong>問題：</strong>5. 用語の意義（重要度：C)</p>
     <p>解答：</p>
     <div class="answerSection" id="question6">
@@ -185,7 +194,7 @@
         <p class="answer">⑵ 酒類製造者とは、酒類の製造免許を受けた者をいう。</p>
     </div>
     <button onclick="toggleAnswers('question6')">表示/非表示</button><br><br>
-
+ </div>
     <script>
     function toggleAnswers(questionId) {
         const section = document.getElementById(questionId);
