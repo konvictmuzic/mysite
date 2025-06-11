@@ -12,19 +12,27 @@
         }
 
         .questionCard {
-            border-bottom: 1px solid #ccc; /* 問題間の区切り線 */
+            border-bottom: 1px solid #ccc;
             padding: 10px 0;
             margin-bottom: 20px;
         }
 
         .answerSection {
-            display: none; /* 初期状態は非表示 */
+            display: none;
             margin-top: 10px;
         }
 
-        object {
+        .pdf-container {
             width: 100%;
-            height: 800px;
+            aspect-ratio: 1.41; /* A4縦横比 */
+            max-height: 80vh;
+            overflow: hidden;
+        }
+
+        embed {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -36,9 +44,9 @@
         <p><strong>問題：</strong>趣旨（重要度：C)</p>
         <p>解答：</p>
         <div class="answerSection" id="question1">
-            <object data="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf" type="application/pdf">
-                このブラウザではPDFを表示できません。PDFファイルは<a href="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf">こちら</a>からダウンロードしてください。
-            </object>
+            <div class="pdf-container">
+                <embed src="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf" type="application/pdf">
+            </div>
         </div>
         <button onclick="toggleAnswers('question1')">表示/非表示</button>
     </div>
@@ -54,7 +62,6 @@
         <button onclick="toggleAnswers('question2')">表示/非表示</button>
     </div>
 
-    <!-- JavaScript -->
     <script>
         function toggleAnswers(questionId) {
             const section = document.getElementById(questionId);
