@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【理論マスター】1-1_納税義務の成立</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+        .answerSection {
+        border: 2px solid #333;
+        padding: 10px;
+        margin-top: 15px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        box-sizing: border-box;
+    　　}
+        p strong {
+        font-size: 1.2em; /* 問題のフォントを大きく */
+        margin-bottom: 10px; /* 問題と解答の間に余白を追加 */
+        }
+
+        .questionCard {
+        border-bottom: 2px solid #ccc; /* 各カード間の区切り線 */
+        padding-bottom: 20px;         /* 下の余白を追加 */
+        margin-bottom: 20px;          /* 次のカードとの間隔を調整 */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>【理論マスター】1-1_納税義務の成立</h1>
+
+  <div class="questionCard">
+    <a href="https://konvictmuzic.github.io/mysite/index.html" >トップページへ </a><br><br><br>
+  </div>
+
+    <!--１問目-->
+  <div class="questionCard">
+    <p><strong>問題：</strong>趣旨（重要度：C)</p>
+    <p>解答：</p>
+    <div class="answerSection" id="question1">
+<div class="answerSection">
+    <iframe src="path/to/your/pdf-file.pdf" width="100%" height="500px"></iframe>
+</div>
+    </div>
+    <button onclick="toggleAnswers('question1')">表示/非表示</button><br><br>
+  </div>
+    <script>
+    function toggleAnswers(questionId) {
+        const section = document.getElementById(questionId);
+        const answers = section.querySelectorAll('.answer');
+        answers.forEach(answer => {
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    }
+    </script>
+
+
+    <!--２問目--> 
+  <div class="questionCard">
+    <p><strong>問題：</strong>１．納税義務者の原則（重要度：AA)</p>
+    <p>解答：</p>
+    <div class="answerSection" id="question2">
+        <p class="answer">⑴ 酒類の製造者は、その製造場から移出した酒類につき、酒税を納める義務がある。</p>
+        <p class="answer">★なお、移出酒類にかかる酒税の納税義務の成立時期は、製造場からの移送の時。</p>
+        <p class="answer">⑵ 酒類を保税地域から引き取る者は、その引き取る酒類につき、酒税を納める義務がある。</p>
+        <p class="answer">★なお、引取酒類にかかる酒税の納税義務の成立時期は、保税地域からの引取の時。</p>
+    </div>
+    <button onclick="toggleAnswers('question2')">表示/非表示</button><br><br>
+  </div>
+     <script>
+    function toggleAnswers(questionId) {
+        const section = document.getElementById(questionId);
+        const answers = section.querySelectorAll('.answer');
+        answers.forEach(answer => {
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    }
+    </script>
+
+
+    <!--３問目--> 
+  <div class="questionCard">
+    <p><strong>問題：</strong>2. 移出又は引取り等とみなす場合 [納税義務の成立の特例]（重要度：AA)</p>
+    <p>解答：</p>
+    <div class="answerSection" id="question3">
+        <p class="answer">⑴次のいずれかに該当するときは、その該当することとなった時にその酒類等をその製造場から移出したものとみなす。</p>
+        <p class="answer">①酒類等が酒類等の製造場において飲用された場合において、その飲用につき、その製造者の責めに帰することができるとき。</p>
+        <p class="answer">②酒類の製造免許に付された期限が経過した場合もしくは酒類等の製造免許が取り消された場合又は酒類等の製造者の相続人につき酒類等の製造免許を受けたものとみなされない場合において、その取り消された又は消滅した製造免許に係る酒類等がその製造場に現存するとき。</p>
+        <p class="answer">ただし、その期限の経過又は申請に基づく製造免許の取消しと同時に必要な行為の継続の規定による酒類の販売の継続を認められた場合を除く。</p>
+        <p class="answer">③酒類等の製造免許を強制的に取り消された者が必要な行為の継続の規定の適用を受けて酒類等を製成したとき。</p>
+        <p class="answer">④酒類等の製造場に現存する酒類等が滞納処分等（、強制執行、担保権の実行としての競売、企業担保権の実行手続又は破産手続）により換価されたとき。</p>
+        <p class="answer">ただし、未納税移出の規定の適用を受けて酒類の製造場からその酒類を移出する場合を除く。</p><br>
+        <p class="answer">⑵酒類等が酒類等の製造者の製造場において飲用された場合において、その飲用につき、その製造者の責めに帰することができないときは、その飲用者をその酒類等に係る酒類等の製造者とみなし、その飲用者が飲用の時にその酒類等をその製造場から移出したものとみなす。</p>
+        <p class="answer">⑶酒類等が保税地域において飲用される場合には、その飲用者が飲用の時にその酒類等をその保税地域から引き取るものとみなす。</p>
+        <p class="answer">⑷酒類等が酒類等の製造者の製造場から移出された場合において、その移出につき、その製造者の責めに帰することができないときは、その酒類等を移出した者を酒類等の製造者とみなす。</p>
+        <p class="answer">⑸酒母又はもろみについて⑴から⑷までの規定の適用があった場合においては、その酒母又はもろみは、その他の醸造酒とみなし、酒母又はもろみの製造者(酒母又はもろみの製造者とみなされた者を含む。)は、その他の醸造酒の製造者とみなす。</p>
+    </div>
+    <button onclick="toggleAnswers('question3')">表示/非表示</button><br><br>
+</div>
+    <script>
+    function toggleAnswers(questionId) {
+        const section = document.getElementById(questionId);
+        const answers = section.querySelectorAll('.answer');
+        answers.forEach(answer => {
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    }
+    </script>
+
+
+
+    <!--４問目--> 
+  <div class="questionCard">
+    <p><strong>問題：</strong>3. 収去酒類の非課税（重要度：C)</p>
+    <p>解答：</p>
+    <div class="answerSection" id="question4">
+        <p class="answer">次に掲げる酒類がその製造場から移出され、又は保税地域から引き取られる場合には、その酒類には、酒税を課さない。</p>
+        <p class="answer">⑴ 食品衛生法の規定により収去される酒類</p>
+        <p class="answer">⑵ 医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律の規定により収去される酒類</p>
+        <p class="answer">⑶ 食品表示法の規定により収去される酒類</p>
+    </div>
+    <button onclick="toggleAnswers('question4')">表示/非表示</button><br><br>
+</div>
+    <script>
+    function toggleAnswers(questionId) {
+        const section = document.getElementById(questionId);
+        const answers = section.querySelectorAll('.answer');
+        answers.forEach(answer => {
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    }
+    </script>
+  
+    <!--５問目--> 
+  <div class="questionCard">
+    <p><strong>問題：</strong>4. 酒税法の規定に違反した場合の納税義務の成立及び罰則（重要度：???)</p>
+    <p>解答：</p>
+    <div class="answerSection" id="question5">
+        <p class="answer">次のいずれかに該当する場合には、酒税法の規定に違反したことにより、直ちにその酒税を徴収する。</p>
+        <p class="answer">ただし、⑴又は⑵の場合において、没収された酒類等には、酒税を課さない。</p>
+        <p class="answer">また、⑴、⑵、⑸又は⑹の場合において、酒母又はもろみは、その他の醸造酒とみなす。</p><br>
+        <p class="answer">⑴酒類等の製造免許を受けないで、酒類等を製造した場合又は酒類等の製造に着手してこれを遂げない場合。(10年以下の懲役又は原則100万円以下の罰金)</p>
+        <p class="answer">⑵法令において認められる場合のほか、製造免許を受けない者の製造した酒類等又は輸入した酒類等で関税法の規定による輸入の許可を受けないものを所持し、譲り渡し、又は譲り受けた場合において、酒類等の製造者が判明しないとき。(1年以下の懲役又は50万円以下の罰金)</p>
+        <p class="answer">⑶酒類製造者が担保を提供し、もしくは納税の担保として酒類の保存につき承認を受けるまで容器に封を施された酒類又は納税の担保としての保存酒類を処分し、又は製造場から移出した場合。(1年以下の懲役又は50万円以下の罰金)</p>
+        <p class="answer">⑷酒類製造者が製造免許を受けないで製造した原料用酒類を承認を受けないで製造場から移出した場合。(1年以下の懲役又は50万円以下の罰金)</p>
+        <p class="answer">⑸酒母又はもろみの製造者が酒母又はもろみを承認を受けないで処分し、又は製造場から移出した場合。(1年以下の懲役又は50万円以下の罰金)</p>
+        <p class="answer">⑹酒母又はもろみの製造者が不可飲処置の命令に違反して酒母又はもろみを処分し、又は製造場から移出した場合。(1年以下の懲役又は50万円以下の罰金)</p>
+    </div>
+    <button onclick="toggleAnswers('question5')">表示/非表示</button><br><br>
+ </div>
+    <script>
+    function toggleAnswers(questionId) {
+        const section = document.getElementById(questionId);
+        const answers = section.querySelectorAll('.answer');
+        answers.forEach(answer => {
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    }
+    </script>
+
+
+    <!--６問目--> 
+  <div class="questionCard">
+    <p><strong>問題：</strong>5. 用語の意義（重要度：C)</p>
+    <p>解答：</p>
+    <div class="answerSection" id="question6">
+        <p class="answer">⑴ 酒類等とは、酒類又は酒母もしくはもろみをいう。</p>
+        <p class="answer">⑵ 酒類製造者とは、酒類の製造免許を受けた者をいう。</p>
+    </div>
+    <button onclick="toggleAnswers('question6')">表示/非表示</button><br><br>
+ </div>
+    <script>
+    function toggleAnswers(questionId) {
+        const section = document.getElementById(questionId);
+        const answers = section.querySelectorAll('.answer');
+        answers.forEach(answer => {
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        });
+    }
+    </script>
+
+
+    
+    
+</body>
+</html>
