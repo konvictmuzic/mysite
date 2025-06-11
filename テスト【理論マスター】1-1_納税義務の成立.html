@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF表示の改善</title>
+    <title>PDF表示の完全調整</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,16 +18,22 @@
         }
 
         .answerSection {
-            display: none; /* 初期状態は非表示 */
+            display: none;
             margin-top: 10px;
         }
 
         iframe {
-            width: 100%; /* 視野幅に合わせる */
-            height: auto; /* 高さを自動調整 */
-            aspect-ratio: 1.41; /* 縦横比を維持 */
+            width: 100%;
+            height: 100vh; /* 画面全体を使う */
             border: none;
-            overflow: auto; /* スクロールを許可 */
+            display: block; /* レスポンシブ対応 */
+            overflow: auto;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: calc(100vw * 1.41); /* スマホで縦横比を維持 */
+            }
         }
     </style>
 </head>
@@ -41,7 +47,7 @@
         <div class="answerSection" id="question1">
             <iframe src="https://konvictmuzic.github.io/mysite/趣旨（重要度：C).pdf"></iframe>
         </div>
-        <button onclick="toggleAnswers('question1')">表示/非表示</button><br><br>
+        <button onclick="toggleAnswers('question1')">表示/非表示</button>
     </div>
 
     <!-- 2問目 -->
