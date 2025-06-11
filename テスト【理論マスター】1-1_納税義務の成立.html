@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF表示の最適化</title>
+    <title>PDF表示の改善</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,11 +23,11 @@
         }
 
         iframe {
-            width: 100%;
-            height: 100vh; /* デバイスの高さに合わせる */
+            width: 100%; /* 視野幅に合わせる */
+            height: auto; /* 高さを自動調整 */
+            aspect-ratio: 1.41; /* 縦横比を維持 */
             border: none;
-            transform: scale(0.9); /* コンテンツを縮小表示 */
-            transform-origin: top left; /* 拡大・縮小基準を左上に設定 */
+            overflow: auto; /* スクロールを許可 */
         }
     </style>
 </head>
