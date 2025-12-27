@@ -13,7 +13,8 @@
 <body>
     <h1>OSPFパケット構造についての説明</h1>
     <a href="https://konvictmuzic.github.io/mysite/index.html" >トップページへ </a>
-    <img src="https://konvictmuzic.github.io/mysite/OSPF2 OSPF_format1.jpg" alt="OSPFのルーティングテーブル生成までの流れ">
-
+    <img src="https://konvictmuzic.github.io/mysite/OSPF2/OSPF_format1.jpg" alt="パケット構造についての説明">
+    <img src="https://konvictmuzic.github.io/mysite/OSPF2/OSPF_format2.jpg" alt="パケット構造についての説明">
+    <img src="https://konvictmuzic.github.io/mysite/OSPF2/OSPF_format3.jpg" alt="パケット構造についての説明">
 </body>
 </html>
