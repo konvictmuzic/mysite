@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>CPU+memory</title>
+    <style>
+        img {
+            width: 150%;
+            max-width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CPU⇔memoryの命令のやり取り</h1><br>
+    <a href="https://konvictmuzic.github.io/mysite/index.html" >トップページへ </a><br>
+　　<br>
+    
+    <h2>①命令の取り出し（= Fetch）</h2><br>
+    <img src="https://konvictmuzic.github.io/mysite/CPU+memory1.png" alt="CPU+memory"><br><br>
+
+    <h2>②命令の解読（= Decode）</h2><br>
+    <img src="https://konvictmuzic.github.io/mysite/CPU+memory2.png" alt="CPU+memory"><br><br>
+  
+    <h2>③命令対象データの取り出し（= Operand Fetch）</h2><br>
+    <img src="https://konvictmuzic.github.io/mysite/CPU+memory3" alt="CPU+memory"><br><br>
+
+    <h2>④命令の実行（= Execute）</h2><br>
+    <img src="https://konvictmuzic.github.io/mysite/CPU+memory4.png" alt="CPU+memory"><br><br>
+
+
+
+</body>
+</html>
