@@ -1,37 +1,294 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>勉強</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>勉強メモ | ネットワークスペシャリスト</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --accent-soft: #dbeafe;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      background: linear-gradient(180deg, #f8fbff 0%, #f3f6fb 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 56px 0 32px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      border-radius: 24px;
+      padding: 40px 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero .tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 4vw, 42px);
+    }
+
+    .hero p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 720px;
+    }
+
+    main {
+      padding-bottom: 56px;
+    }
+    .section-title {
+      margin: 0 0 20px;
+      font-size: 28px;
+    }
+
+    .section-desc {
+      margin: 0 0 28px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      display: block;
+      text-decoration: none;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      color: var(--text);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px rgba(37, 99, 235, 0.12);
+      border-color: #bfd3ff;
+    }
+
+    .card-title {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .card-text {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 10px 0 40px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 28px 22px;
+        border-radius: 18px;
+      }
+      .section-title {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <div class="tag">Study Notes</div>
+        <h1>ネットワークスペシャリスト 勉強メモ</h1>
+        <p>
+          ネットワーク、セキュリティ、インフラまわりの学習内容をまとめた個人用ノートです。
+          気になったテーマを少しずつ整理していくためのページ。
+        </p>
+      </div>
+    </header>
 
-    <h2>ネットワークスペシャリスト</h2>
-    <a href="https://konvictmuzic.github.io/mysite/STP.html" >STP</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/RIP1.html" >RIP</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/OSPF.html" >OSPF</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/OSPF2.html" >OSPF2</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/IGMP.html" >IGMP</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/デジタル証明書の発行.html" >デジタル証明書の発行</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/TLS.html" >TLSの通信の手順</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/TLS packet.html" >TLSのパケットフォーマット</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/proxyの設定方法.html" >proxyの設定方法</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/proxyの対象外FQDNの設定.html" >proxyの対象外FQDNの設定方法</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/DNSSEC.html" >DNSSEC</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/OAUTH.html" >OAUTH</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/ケルベロス.html" >ケルベロス</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/SSL-VPN.html" >SSL-VPN</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/ルーティング(ロンゲストマッチとか).html" >ルーティング(ロンゲストマッチとか)</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/BGP.html" >BGP</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/セグメント.html" >セグメント</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/PACファイル.html" >PACファイル</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/プロキシ.html" >プロキシ</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/CPU+memory.html" >CPU+memory</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/攻撃手法.html" >攻撃手法</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/Meet-in-the-middle attack.html" >Meet-in-the-middle attack</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/RAID.html" >RAID</a><br>
-    <a href="https://konvictmuzic.github.io/mysite/PIM-SM.html" >PIM-SM</a><br></body>
-    <a href="https://konvictmuzic.github.io/mysite/cipher-mode.html" >cipher-mode</a><br></body>    
-    <a href="https://konvictmuzic.github.io/mysite/アクセス制御.html" >アクセス制御</a><br></body>    
+    <main>
+      <section>
+        <h2 class="section-title">学習テーマ一覧</h2>
+        <p class="section-desc">
+          各項目をクリックすると、対応するメモページへ移動します。
+        </p>
+
+        <div class="grid">
+          <a class="card" href="https://konvictmuzic.github.io/mysite/STP.html">
+            <h3 class="card-title">STP</h3>
+            <p class="card-text">スイッチ間のループ防止に関する基本事項。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/RIP1.html">
+            <h3 class="card-title">RIP</h3>
+            <p class="card-text">距離ベクトル型ルーティングプロトコルの基礎。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/OSPF.html">
+            <h3 class="card-title">OSPF</h3>
+            <p class="card-text">リンクステート型ルーティングの代表例。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/OSPF2.html">
+            <h3 class="card-title">OSPF2</h3>
+            <p class="card-text">OSPFの追加整理や発展メモ。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/IGMP.html">
+            <h3 class="card-title">IGMP</h3>
+            <p class="card-text">マルチキャスト通信に関係するプロトコル。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/デジタル証明書の発行.html">
+            <h3 class="card-title">デジタル証明書の発行</h3>
+            <p class="card-text">証明書発行の流れとPKIの基本。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/TLS.html">
+            <h3 class="card-title">TLSの通信の手順</h3>
+            <p class="card-text">TLSハンドシェイクの概要と通信の流れ。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/TLS packet.html">
+            <h3 class="card-title">TLSのパケットフォーマット</h3>
+            <p class="card-text">TLSで扱うメッセージ形式の整理。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/proxyの設定方法.html">
+            <h3 class="card-title">proxyの設定方法</h3>
+            <p class="card-text">プロキシ設定の基本的な考え方。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/proxyの対象外FQDNの設定.html">
+            <h3 class="card-title">proxyの対象外FQDNの設定方法</h3>
+            <p class="card-text">例外設定やバイパス対象の整理。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/DNSSEC.html">
+            <h3 class="card-title">DNSSEC</h3>
+            <p class="card-text">DNS応答の正当性を担保する仕組み。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/OAUTH.html">
+            <h3 class="card-title">OAUTH</h3>
+            <p class="card-text">認可の仕組みとトークンベースの考え方。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/ケルベロス.html">
+            <h3 class="card-title">ケルベロス</h3>
+            <p class="card-text">チケットベース認証の代表例。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/SSL-VPN.html">
+            <h3 class="card-title">SSL-VPN</h3>
+            <p class="card-text">リモートアクセスVPNの基礎。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/ルーティング(ロンゲストマッチとか).html">
+            <h3 class="card-title">ルーティング(ロンゲストマッチとか)</h3>
+            <p class="card-text">経路選択の基本ルールや考え方。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/BGP.html">
+            <h3 class="card-title">BGP</h3>
+            <p class="card-text">AS間ルーティングに使われる重要プロトコル。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/セグメント.html">
+            <h3 class="card-title">セグメント</h3>
+            <p class="card-text">ネットワーク分割の考え方を整理。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/PACファイル.html">
+            <h3 class="card-title">PACファイル</h3>
+            <p class="card-text">自動プロキシ設定ファイルの基本。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/プロキシ.html">
+            <h3 class="card-title">プロキシ</h3>
+            <p class="card-text">プロキシの役割と利用目的。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/CPU+memory.html">
+            <h3 class="card-title">CPU + memory</h3>
+            <p class="card-text">基本的なコンピュータ資源の整理。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/攻撃手法.html">
+            <h3 class="card-title">攻撃手法</h3>
+            <p class="card-text">代表的なセキュリティ攻撃の概要。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/Meet-in-the-middle attack.html">
+            <h3 class="card-title">Meet-in-the-middle attack</h3>
+            <p class="card-text">中間者攻撃の考え方と影響。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/RAID.html">
+            <h3 class="card-title">RAID</h3>
+            <p class="card-text">ディスク冗長化と構成パターンの基礎。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/PIM-SM.html">
+            <h3 class="card-title">PIM-SM</h3>
+            <p class="card-text">マルチキャストルーティング方式のひとつ。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/cipher-mode.html">
+            <h3 class="card-title">cipher-mode</h3>
+            <p class="card-text">暗号利用モードの違いを整理。</p>
+          </a>
+
+          <a class="card" href="https://konvictmuzic.github.io/mysite/アクセス制御.html">
+            <h3 class="card-title">アクセス制御</h3>
+            <p class="card-text">認可や権限管理の基本概念。</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Study Notes / GitHub Pages</p>
+    </footer>
+  </div>
+</body>
 </html>
